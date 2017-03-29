@@ -17,7 +17,6 @@
 > - Форматирование даты сделал на основе <a href="http://stackoverflow.com/questions/35606551/jstl-localdatetime-format#35607225">JSTL LocalDateTime format</a>
 > - Переименовал `TimeUtil` в `DateTimeUtil`
 > - Переименовал `mealList.jsp` в `meals.jsp`
-> - В `MealServlet.doGet()` сделал выбор через *switch*
 
 - <a href="http://design-pattern.ru/patterns/mvc.html">MVC - Model View Controller</a>
 
@@ -27,6 +26,7 @@
 
 > - Переименовал `mealEdit.jsp` в `meal.jsp`
 > - В `meal.jsp` используется <a href="http://stackoverflow.com/questions/1890438/how-to-get-parameters-from-the-url-with-jsp#1890462">параметр запроса `param.action`</a>, он не кладется а аттрибуты.
+> - В `MealServlet.doGet()` сделал выбор через *switch*
 
 - <a href="http://stackoverflow.com/questions/246859/http-1-0-vs-1-1">HTTP 1.0 vs 1.1</a>
 
