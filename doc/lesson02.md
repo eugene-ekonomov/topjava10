@@ -18,7 +18,8 @@
 > - Переименовал `TimeUtil` в `DateTimeUtil`
 > - Переименовал `mealList.jsp` в `meals.jsp`
 
-- <a href="http://design-pattern.ru/patterns/mvc.html">MVC - Model View Controller</a>
+- [jsp:useBean](http://www.java2ee.ru/jsp/useBean.html)
+- [MVC - Model View Controller](http://design-pattern.ru/patterns/mvc.html)
 
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 2. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFQndBeWFOa3phRTg">Optional: реализация CRUD</a>
 #### Apply 2-2-HW1-optional.patch**
