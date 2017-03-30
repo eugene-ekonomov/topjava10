@@ -42,8 +42,11 @@
 
 ## Занятие 2:
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 3. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFVDJZVTktQzRYTWc">Библиотека vs Фреймворк. Стандартные библиотеки Apache Commons, Guava</a>
-- <a href="http://commons.apache.org/">Apache Commons</a>, <a href="https://code.google.com/p/guava-libraries/wiki/GuavaExplained">Guava</a>
-#### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) Дополнительно: [обзор библиотеки Java Google Guava](https://www.youtube.com/watch?v=rkwItY57mkE)
+- <a href="http://commons.apache.org/">Apache Commons</a>, <a href="https://github.com/google/guava/wiki">Guava</a>
+- Дополнительно
+  - ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) [ Обзор библиотеки Java Google Guava](https://www.youtube.com/watch?v=rkwItY57mkE)
+  - [Guava Release 21.0](https://github.com/google/guava/wiki/Release21)
+  - [Очень вкусный фрукт Guava](https://www.slideshare.net/echernyshev/guava-41982734)
    
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 4. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFeWZ1d1cxaUZiUmc">Слои приложения. Создание каркаса приложения.</a>
 #### Apply 2-3-app-layers.patch**
