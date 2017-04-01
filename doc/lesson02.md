@@ -66,6 +66,37 @@
    - <a href="http://habrahabr.ru/post/263033/">Забудьте о DAO, используйте Repository</a>
    - <a href="http://stackoverflow.com/questions/6640784/difference-between-active-record-and-dao">Difference between Active Record and DAO</a>
 
+## ![question](https://cloud.githubusercontent.com/assets/13649199/13672858/9cd58692-e6e7-11e5-905d-c295d2a456f1.png) Ваши вопросы
+>  Какова цель деления приложения на слои?
+
+Управляемость проекта (особенно большого) повышается на порядок:
+- Обеспечивается меньшая связываемость. Допустим если мы меняем что то в контроллере, то сервис эти изменения не задевают.
+- Облегчается тестирование (мы будем тестировать слои сервисов и контроллеров отдельно)
+
+> DTO используются когда есть избыточность запросов, которую мы уменьшаем, собрав данные из разных бинов в один? Когда DTO необходимо использовать?
+
+(D)TO может быть как частью одного entity  (набор полей) так и набором нескольких entities.
+В нашем проекте для данных, которые надо отдавать наружу и они отличаются от Entiy (хранимый бин), мы будем делать (Data) Transfer Object и класть в отдельный пакет to.
+Например `MealsWithExceeded` мы отдаем наружу и он является Transfer Object, его надо пернести в пакет `to`.
+На многих проектах (и собеседованиях) практикуют разделение на уровне maven модулей entity слоя от логики и соответствующей конвертацией ВСЕХ Entity в TO, даже если у них те же самые поля.
+Хороший ответ когда TO обязательны есть на <a href="http://stackoverflow.com/questions/21554977/should-services-always-return-dtos-or-can-they-also-return-domain-models#21569720">stackoverflow: When to Use</a>.
+
+> Почему контроллеры положили в папку web, а не в conrollers?
+
+Тоже самое что `domain/model` - просто разные названия.
+
+> Зачем мы наследуем NotFoundException от RuntimeException?
+
+Так с ним удобнее работать. И у нас нет никаких действий по восстановлению состояния приложения (no recoverable conditions): <a href="http://stackoverflow.com/questions/6115896/java-checked-vs-unchecked-exception-explanation">checked vs unchecked exception</a>. По последним данным checked exception вообще depricated: <a href="http://blog.takipi.com/ignore-checked-exceptions-all-the-cool-devs-are-doing-it-based-on-600000-java-projects">Ignore Checked Exceptions</a>
+
+> Зачем в AdminRestController переопределяются методы родителя с вызовом тех же родительских? 
+
+Сделано на будующее - мы будем работать не с AbstractUserController, а именно с AdminRestController.
+
+> И что такое ProfileRestController?
+
+Контроллер, где авторизованный пользователь будет работать со своими данными
+
 ###  ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 5. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFWXA1b0pnMGlvU0U">Обзор  Spring Framework. Spring Context.</a>
 #### Apply 2-4-add-spring-context.patch**
 -  <a href="http://en.wikipedia.org/wiki/Spring_Framework">Spring Framework</a>
@@ -98,27 +129,9 @@
 `<context:annotation-config/>` говорит спрингу при поднятии контекста обрабатывать `@Autowired` (добавляется в контекст спринга `AutowiredAnnotationBeanPostProcessor`). После того, как все бины в уже в контексте пост-процессор через отражение инжектит все `@Autowired` зависимости.
  
 ## ![question](https://cloud.githubusercontent.com/assets/13649199/13672858/9cd58692-e6e7-11e5-905d-c295d2a456f1.png) Ваши вопросы
->  Какова цель деления приложения на слои?
-
-Управляемость проекта (особенно большого) повышается на порядок:
-- Обеспечивается меньшая связываемость. Допустим если мы меняем что то в контроллере, то сервис эти изменения не задевают.
-- Облегчается тестирование (мы будем тестировать слои сервисов и контроллеров отдельно)
-
-> DTO используются когда есть избыточность запросов, которую мы уменьшаем, собрав данные из разных бинов в один? Когда DTO необходимо использовать?
-
-(D)TO может быть как частью одного entity  (набор полей) так и набором нескольких entities.
-В нашем проекте для данных, которые надо отдавать наружу и они отличаются от Entiy (хранимый бин), мы будем делать (Data) Transfer Object и класть в отдельный пакет to.
-Например `MealsWithExceeded` мы отдаем наружу и он является Transfer Object, его надо пернести в пакет `to`.
-На многих проектах (и собеседованиях) практикуют разделение на уровне maven модулей entity слоя от логики и соответствующей конвертацией ВСЕХ Entity в TO, даже если у них те же самые поля.
-Хороший ответ когда TO обязательны есть на <a href="http://stackoverflow.com/questions/21554977/should-services-always-return-dtos-or-can-they-also-return-domain-models#21569720">stackoverflow: When to Use</a>.
-
 > Что такое схема в spring-app.xml xsi:schemaLocation и зачем она нужна
 
 <a href="https://ru.wikipedia.org/wiki/XML_Schema">XML схема</a> нужна для валидации xml, IDEA делает по ней атвозаполнение.
-
-> Почему контроллеры положили в папку web, а не в conrollers?
-
-Тоже самое что `domain/model` - просто разные названия.
 
 > Что означает для Spring
 
@@ -132,10 +145,6 @@
 
 `@Autowired`  инжектит по типу (т.е. ижектит класс который реализует `UserRepository`). Обычно он один. Если у нас несколько реализаций, Spring не поднимится и поругается - `No unique bean`.
  В этом случае <a href="http://www.mkyong.com/spring/spring-autowiring-qualifier-example/">можно уточнить имя бина через @Qualifier</a>. `@Qualifier` обычно добавляют только в случае нескольких реализаций.
-
-> Зачем мы наследуем NotFoundException от RuntimeException?
-
-Так с ним удобнее работать. И у нас нет никаких действий по восстановлению состояния приложения (no recoverable conditions): <a href="http://stackoverflow.com/questions/6115896/java-checked-vs-unchecked-exception-explanation">checked vs unchecked exception</a>. По последним данным checked exception вообще depricated: <a href="http://blog.takipi.com/ignore-checked-exceptions-all-the-cool-devs-are-doing-it-based-on-600000-java-projects">Ignore Checked Exceptions</a>
 
 --------------------
 
