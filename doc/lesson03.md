@@ -5,7 +5,7 @@
 ### ![correction](https://cloud.githubusercontent.com/assets/13649199/13672935/ef09ec1e-e6e7-11e5-9f79-d1641c05cbe6.png) Правки в проекте
 
 #### Apply 3_0_1_log_correction.patch
-- Не делать конкатенация строк при логгировании, если уровень логирования выставлен выше INFO
+- Не делать конкатенацию строк при логгировании сообщений, если уровень логирования в конфигурации выставлен выше уровня логирования в коде
   - [slf4j formatting with {}](http://stackoverflow.com/a/10596390/548473)
   - [What is the fastest way of (not) logging](https://www.slf4j.org/faq.html#logging_performance)
 - Мелкие правки  
@@ -177,7 +177,7 @@ UNIQUE индекс нужен для обеcпечения уникальнос
 
 Что значит - "нормально"? Приложение работает. Ненормально, когда в приложении есть "лишний" код, который не используется. Для ORM он нам понадобится- мы `Meal.user` добавим.
 
-> Почему мы использует 1 БД sequence на разные сущности?
+> Почему мы использует один sequence на разные таблицы?
 
 Мы будем использовать Hibernate, по умолчанию он делает глобальный sequence на все таблицы. В этом подходе есть <a href="http://stackoverflow.com/questions/1536479/asking-for-opinions-one-sequence-for-all-tables">как плюсы, так и минусы</a>, из плюсов - удобно делать ссылки в коде и в таблицах на при наследовании и мапы в коде. В дополнение: <a href="http://stackoverflow.com/questions/6633384/can-i-configure-hibernate-to-create-separate-sequence-for-each-table-by-default">Configure Hibernate to create separate sequence for each table by default</a>.
 
