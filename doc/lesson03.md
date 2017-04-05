@@ -2,7 +2,7 @@
  
 ### <a href="https://drive.google.com/drive/u/0/folders/0B9Ye2auQ_NsFT1NxdTFOQ1dvVnM">Материалы занятия (скачать все патчи можно через Download папки patch)</a>
 
-![correction](https://cloud.githubusercontent.com/assets/13649199/13672935/ef09ec1e-e6e7-11e5-9f79-d1641c05cbe6.png) Правки в проекте
+### ![correction](https://cloud.githubusercontent.com/assets/13649199/13672935/ef09ec1e-e6e7-11e5-9f79-d1641c05cbe6.png) Правки в проекте
 
 #### Apply 3_0_1_log_correction.patch
 - Не делать конкатенация строк при логгировании, если уровень логирования выставлен выше INFO
