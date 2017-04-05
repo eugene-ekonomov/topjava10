@@ -91,7 +91,7 @@
 
 > Зачем в AdminRestController переопределяются методы родителя с вызовом тех же родительских? 
 
-Сделано на будующее - мы будем работать не с AbstractUserController, а именно с AdminRestController.
+Сделано на будущее - мы будем работать не с AbstractUserController, а именно с AdminRestController.
 
 > И что такое ProfileRestController?
 
