@@ -172,7 +172,7 @@
   - 4.4: конвертацию в `MealWithExceeded` можно делать как в слое web, так и в service ([Mapping Entity->DTO: Controller or Service?](http://stackoverflow.com/questions/31644131))
   - 4.5: в `MealServiceImpl` постараться сделать в каждом методе только одни запрос к `MealRepository`
   - 4.6 еще раз: не надо в названиях методов повторять названия класса (`Meal`).
-- 5: включить классы еды в контекст Spring (добавить аннотации) и проверить из `SpringMain` вызов метода `MealRestController`
+- 5: включить классы еды в контекст Spring (добавить аннотации) и вызвать из `SpringMain` любой метод `MealRestController` (проверить что Spring все корректно заинжектил)
 
 ### Optional
 - 6: в `MealServlet` сделать инициализацию Spring, достать `MealRestController` из контекста и работать с едой через него (как в `SpringMain`). `pom.xml` НЕ менять, работаем со `spring-context`. Сервлет обращается к контролеру, контроллер вызывает сервис, сервис - репозиторий.
