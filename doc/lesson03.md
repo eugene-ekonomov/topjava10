@@ -117,13 +117,13 @@
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 9. <a href="https://drive.google.com/open?id=0B4dIHS3wRAhhQUJMMFU0VnRrUUE">Подготовка тестовых данных и тестирование UserService.</a>
 > Изменение: обертку для сравнения инстансов при тестировании перенес в сам матчер (`ModelMatcher.Wrapper`). Он сравнивает инстансы по переданному как параметр компаратору. Класс из видео `UserTestData.TestUser` стал не нужен. 
 
-#### Apply 12-test-UserService.patch
+#### Apply 11-test-UserService.patch
 
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 10. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFVmZaSm9UMktXUnc">Логирование тестов.</a>
-#### Apply 13-test-logging.patch
+#### Apply 12-test-logging.patch
 > Новый PostgreSQL JDBC Driver [логирует через java.util.logging](https://github.com/pgjdbc/pgjdbc#changelog).  [Направил логирование в SLF4J](http://stackoverflow.com/a/43242620/548473)
  
-#### Apply 14-fix-servlet.patch
+#### Apply 13-fix-servlet.patch
 > Приложение перестало работать, тк. для репозитория мы используем заглушку `JdbcMealRepositoryImpl`
  
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 11. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFNDlOQVpOWF82OTA">Ответы на Ваши вопросы</a>
