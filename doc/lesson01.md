@@ -68,6 +68,8 @@
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 5. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFT3pWNkMzWVVybnc">WAR. Веб-контейнер Tomcat. Сервлеты.</a>
 #### Apply 1-3-switch-to-war.patch
 
+> **ВНИМАНИЕ! В последней версии Tomcat 8.5.13 Spring не сканирует пакеты при запуске из IDEA. Берите версию 8.5.11**
+
 > - Обновил сервлеты до <a href="https://www.mkyong.com/web-development/the-web-xml-deployment-descriptor-examples/">версии 3.1</a> 
 (Tomcat 8 использует это API, хотя для нас не принципиально, т.к. мы никакие <a href="https://ru.wikipedia.org/wiki/Сервлет_(Java)">фичи 3.x Servlet API</a> не используем)
 > - Переименовал `userList.jsp` в `users.jsp`
