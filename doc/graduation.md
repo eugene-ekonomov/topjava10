@@ -1,5 +1,3 @@
-# Онлайн проекта <a href="https://github.com/JavaWebinar/topjava09">Topjava</a>
-
 ## Graduation project
 
 Design and implement a REST API using Hibernate/Spring/SpringMVC (or Spring-Boot) **without frontend**.
