@@ -198,7 +198,10 @@ UNIQUE индекс нужен для обеcпечения уникальнос
 - 6 Предложить решение, как почнинить `SpringMain, InMemory*Test`. `InMemory*Test` должны использовать реализацию в памяти
 - 7 Сделать индексы к таблице `Meals`. Индекс на pk (id) postgres создает автоматически: <a href="http://stackoverflow.com/questions/970562/postgres-and-indexes-on-foreign-keys-and-primary-keys">Postgres and Indexes on Foreign Keys and Primary Keys</a>
   - <a href="http://postgresguide.com/performance/indexes.html">Postgres Guide: Indexes</a>
-  
+  - [Оптимизация запросов. Основы EXPLAIN в PostgreSQL](https://habrahabr.ru/post/203320/)
+  - [Оптимизация запросов. Часть 2](https://habrahabr.ru/post/203386/)
+  - [Оптимизация запросов. Часть 3](https://habrahabr.ru/post/203484/)
+
 ### ![error](https://cloud.githubusercontent.com/assets/13649199/13672935/ef09ec1e-e6e7-11e5-9f79-d1641c05cbe6.png) Решение проблем
 
 > Из каталога `main` не видятся классы/ресурсы в `test`
