@@ -51,7 +51,7 @@
 #### **Apply 3-improve-code.patch**
 - <a href="https://ru.wikipedia.org/wiki/Контрактное_программирование">Контрактное программирование</a>, <a href="http://neerc.ifmo.ru/wiki/index.php?title=Программирование_по_контракту">Программирование по контракту</a>
 - <a href="http://www.sw-engineering-candies.com/blog-1/comparison-of-ways-to-check-preconditions-in-java">Comparison Preconditions in Java</a>
-- IDEA [UAnalyze | Inspect Code](https://www.jetbrains.com/help/idea/2017.1/running-inspections.html)
+- IDEA [Analyze | Inspect Code](https://www.jetbrains.com/help/idea/2017.1/running-inspections.html)
 - <a href="https://code.google.com/archive/p/findbugs/wikis/IntellijFindBugsPlugins.wiki">QAPlug vs FindBugs</a>
 - <a href="http://qaplug.com/about/tutorials/">QAPlug tutorials</a>
 
