@@ -28,7 +28,8 @@
   - [Оптимизация запросов. Основы EXPLAIN в PostgreSQL](https://habrahabr.ru/post/203320/)
   - [Оптимизация запросов. Часть 2](https://habrahabr.ru/post/203386/)
   - [Оптимизация запросов. Часть 3](https://habrahabr.ru/post/203484/)
-  
+  - [Документация Postgres: индексы](https://postgrespro.ru/docs/postgresql/9.6/indexes.html)
+
 #### **Apply 2-HW3-optional.patch**
 
 ## Занятие 4:
