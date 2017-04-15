@@ -35,10 +35,14 @@
 ## Занятие 4:
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 2. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFU005ZzBNZmZnTVU">Методы улучшения качества кода</a>
 **Внимание!! В IDEA 2017.1.1 любой QAPlugin у меня крэшится**  
-- Сделайте интеграцию своего репозитория и подключите сверху своего <a href="https://github.com/JavaWebinar/topjava10/blob/master/README.md">README.md</a> (<a href="https://raw.githubusercontent.com/JavaWebinar/topjava10/master/README.md">Raw</a>) интергацию с
-    - <a href="https://www.codacy.com">Codacy Check code</a>
-    - <a href="https://dependencyci.com/">Continuously Test Your Dependencies</a>
-    - <a href="https://travis-ci.org/">Сборку и тесты Travis</a>
+
+Сделайте интеграцию своего репозитория и подключите сверху своего <a href="https://github.com/JavaWebinar/topjava10/blob/master/README.md">README.md</a> (<a href="https://raw.githubusercontent.com/JavaWebinar/topjava10/master/README.md">Raw</a>) интергацию с
+  - <a href="https://www.codacy.com">Codacy Check code</a>
+  - <a href="https://dependencyci.com/">Continuously Test Your Dependencies</a>
+     - [Introducing Dependency CI](https://medium.com/@teabass/introducing-dependency-ci-e859fa138eb6)
+  - <a href="https://travis-ci.org/">Сборку и тесты Travis</a>
+     - [Travis CI Tutorial](https://dzone.com/articles/travis-ci-tutorial-java-projects)
+     
 > - Пофиксил в патче <a href="https://www.codacy.com/app/javawebinar/topjava10/dashboard">Codacy Issues</a> 
 >   - проверку assert в JUnit отключил в настройках (remove pattern)
 >   - добавил в JSP  `<meta ... UTF-8`
@@ -46,7 +50,6 @@
 > - Перенес проверки предусловий `Assert` из `InMemory` репозиториев в сервисы
 > - Добавил конфигурацию `.travis.yml` 
 >   - <a href="https://docs.travis-ci.com/user/languages/java/">Сборка Java проекта</a>
->   - <a href="https://dzone.com/articles/travis-ci-tutorial-java-projects">Travis CI Tutorial</a>
 
 #### **Apply 3-improve-code.patch**
 - <a href="https://ru.wikipedia.org/wiki/Контрактное_программирование">Контрактное программирование</a>, <a href="http://neerc.ifmo.ru/wiki/index.php?title=Программирование_по_контракту">Программирование по контракту</a>
