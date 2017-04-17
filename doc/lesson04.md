@@ -92,6 +92,7 @@
 -  Подключение к проекту Spring ORM и Hibernate
 -  <a href="http://en.wikibooks.org/wiki/Java_Persistence/Inheritance">Отображения наследования объектов на таблицы</a>
 -  <a href="http://en.wikibooks.org/wiki/Java_Persistence/Identity_and_Sequencing">Стратегии генерации PK</a>
+-  [Field vs property access](http://stackoverflow.com/a/6084701/548473)
 -  Добавление <a href="http://validator.hibernate.org">hibernate-validator</a>. <a href="http://stackoverflow.com/questions/14730329/jpa-2-0-exception-to-use-javax-validation-package-in-jpa-2-0">JSR-303 -> JSR-349</a>
 -  <a href="http://devcolibri.com/2046">Описание связей в модели. Ленивая загрузка объекта.</a>
 -  Конфигурирование JPA. Сканировние Entities. <a href="http://docs.jboss.org/hibernate/entitymanager/3.6/reference/en/html/architecture.html#d0e61">JPA definitions</a>
