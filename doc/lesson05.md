@@ -44,6 +44,11 @@
 >   - <a href="http://stackoverflow.com/questions/5031614/the-jpa-hashcode-equals-dilemma">JPA hashCode()/equals() dilemma</a>
 >   - <a href="http://blog.xebia.com/advanced-hibernate-proxy-pitfalls/">Hibernate Proxy Pitfalls</a>
 
+## ![question](https://cloud.githubusercontent.com/assets/13649199/13672858/9cd58692-e6e7-11e5-905d-c295d2a456f1.png) Вопрос:
+>  Почему над `BaseEntity` почему осталось `@Access(AccessType.FIELD)` ? Почему при запросе `user.id` нам не нужно нужно вытаскивать его из базы?
+
+`AccessType.FIELD` делает доступ по полям в BaseEntity (кроме id) и всех классах-наследниках. При загрузке `Meal` hibernate на основе поля `meal.user_id` делает ленивую прокcи к `User`, у которой нет ничего, кроме `id`. Из за бага хибернайт обращается за юзером в базу, хотя ничего кроме его id нам не надо. `@Access(value = AccessType.PROPERTY)` над id позволяет обойти баг и не делать лишний запрос в базу.
+
 #### Apply 3-HW4-optional.patch
 
 > - <a href="http://stackoverflow.com/a/33001846/548473">Hibernate 5.2.x already include Java 8 date and time types (JSR-310)</a>
