@@ -78,7 +78,7 @@
 `Profiles.ACTIVE_DB` и `Profiles.REPOSITORY_IMPLEMENTATION` будут задавать активный профиль базы (postgres/hsqldb) и реализации репозитория при запуске приложения (для тестов задаются через `@ActiveProfiles`).
 
 > Вопрос: почему после этого патча не поднимется Spring при запуске приложения в Tomcat? (будем чинить в ДЗ п.6)
-
+**Внимание: `scope=provided`не работает в Tomcat 7.x? поставьте 8 (и 8.5.13 у меня не работает с IDEA)**
  
 - <a href="https://dzone.com/articles/using-spring-profiles-xml">Using Spring Profiles in XML Config</a>
 - <a href="https://www.mkyong.com/spring/spring-profiles-example/">Spring Profiles example</a>
