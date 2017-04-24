@@ -41,7 +41,7 @@ select populate_db();
 ### Без индекса
 **время выполнения 200ms/150ms**
 
-> DROP INDEX IF EXIST meals_unique_user_datetime_idx;
+> DROP INDEX IF EXISTS meals_unique_user_datetime_idx;
 
 > EXPLAIN ANALYZE
          SELECT * FROM meals
