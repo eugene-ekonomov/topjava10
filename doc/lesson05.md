@@ -173,3 +173,5 @@
 - 9: Проверьте, что все тесты запускаются из Maven (имена классов тестов удовлетворяют соглашению) и итоги тестов класса выводятся корректно (не копятся)
 - 10: `@ActiveProfiles` принимает в качестве параметра строку, либо **массив** строк. В тестах можно задавать несколько `@ActiveProfiles` в разных классах, они суммируются 
 - 11: В релизации 7.1 учесть, что у юзера может отсутствовать еда
+- 12: [Ordering a join fetched collection in JPA using JPQL/HQL
+](http://stackoverflow.com/questions/5903774/ordering-a-join-fetched-collection-in-jpa-using-jpql-hql)
