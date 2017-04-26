@@ -144,7 +144,7 @@
   - 2.2: Для интеграции с IDEA не забудте выставить в `spring-db.xml` справа вверху в `Change Profiles...` профили, например `datajpa, postgres`
   - 2.3: Общие части для всех в `spring-db.xml` можно оставить как есть без профилей, но до первого `<beans profile=` (вверху файла).
 - 3: Сделать тесты всех реализаций (`jdbc, jpa, datajpa`) через наследование (без дублирования)
-    3.1 **сделать один базовый класс для `MealServiceTest` и `UserServiceTest`**.
+  -  3.1 **сделать один базовый класс для `MealServiceTest` и `UserServiceTest`**.
 - 4: Запустить все тесты: `mvn test` (в IDEA Maven Lifecycle - test, кнопку skipTest отжать)
 
 #### Optional
