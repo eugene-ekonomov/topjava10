@@ -108,6 +108,10 @@
    -  <a href="https://blog.42.nl/articles/spring-data-jpa-with-querydsl-repositories-made-easy/">Spring Data JPA with QueryDSL</a>
    -  [SpEL support in Spring Data JPA @Query](https://spring.io/blog/2014/07/15/spel-support-in-spring-data-jpa-query-definitions)
 
+> ![question](https://cloud.githubusercontent.com/assets/13649199/13672858/9cd58692-e6e7-11e5-905d-c295d2a456f1.png) Когда нужно ставить аннотацию `@Modifying`? Почему она стоит только над delete, но не над save?
+
+`@Modifying` ставинся на модифицирующие `@Query`. Реализацию save можно посмотреть в `org.springframework.data.jpa.repository.support.SimpleJpaRepository#save()`
+
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 7. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFajd2Y2RLQVVJWUU">Spring кэш</a>
 #### Apply 6-spring-cache.patch
 -  <a href="http://habrahabr.ru/post/113945/">Кеширование в Spring Framework</a>
