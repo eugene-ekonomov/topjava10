@@ -48,6 +48,9 @@
 - <a href="https://dou.ua/lenta/articles/jpa-fetch-types/">Стратегии загрузки коллекций в JPA</a>
 - <a href="https://dou.ua/lenta/articles/hibernate-fetch-types/">Стратегии загрузки коллекций в Hibernate</a>
 
+> Те. кода мы достаем всех юзеров с ролями без `@BatchSize` делается запрос юзеров (1) и на каждого юзера идет в базу запрос ролей (+N).
+C `@BatchSize(size = 200)` делается запрос на юзеров(1) и затем роли достаются пачками для 200 юзеров (+ N/200).
+
 ## Занятие 6:
 
 ### Автоматический выбор профиля базы. [`ActiveProfilesResolver`](http://stackoverflow.com/questions/23871255/spring-profiles-simple-example-of-activeprofilesresolver)
