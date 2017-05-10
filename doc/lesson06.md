@@ -290,3 +290,4 @@ _ru.javawebinar.topjava.model.User_ - имя региона, которое ис
 - 4: При проблемах с запуском томкат проверьте запущенные `java` процессы, нет ли в `TOMCAT_HOME\webapps` приложения каталога `topjava`, логи tomcat - нет ли проблем с доступом к каталогам или контекстом Spring.
 - 5: Если создаете List с одним значением или Map с одним ключом-значением, пользуйтесь `Collections.singleton..`
 - 6: В MealController общую часть `@RequestMapping(value = "/meals")` лучше вынести на уровень класса
+- 7: Не забывайте при реализации `JdbcUserRepositoryImpl` про `Map.computeIfAbsent` и `EnumSet`
