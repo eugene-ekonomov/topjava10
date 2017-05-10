@@ -128,7 +128,7 @@ hamcrest-all используется в проверках `RootControllerTest`
 
 См. <a href="https://docs.oracle.com/javase/tutorial/java/generics/methods.html">Generic Methods</a>. Когда компилятор не может вывести тип, можно его уточнить при вызове generic метода. Не важно static или нет.
 
-## ![hw](https://cloud.githubusercontent.com/assets/13649199/13672719/09593080-e6e7git add doc/-11e5-81d1-5cb629c438ca.png) Домашнее задание HW07
+## ![hw](https://cloud.githubusercontent.com/assets/13649199/13672719/09593080-e6e7-11e5-81d1-5cb629c438ca.png) Домашнее задание HW07
 
 - 1: Добавить тесты контроллеров:
   - 1.1 `RootControllerTest.testMeals` для `meals.jsp`
@@ -142,7 +142,7 @@ hamcrest-all используется в проверках `RootControllerTest`
   -  <a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/html/mvc.html#mvc-config-conversion">Кастомный Spring конвертор</a>
   -  <a href="http://stackoverflow.com/questions/13048368/difference-between-spring-mvc-formatters-and-converters">Difference between Spring MVC formatters and converters</a>
   -  Опционально: <a href="http://sambitjavatips.blogspot.ru/2014/10/spring-custom-formatter-annotation-for.html">Spring custom formatter annotation</a>
-- 4^ Протестировать `MealRestController` через любой инструмент (SoapUi, curl, IDEA Test RESTful Web Service, Postman)
+- 4: Протестировать `MealRestController` через любой инструмент (SoapUi, curl, IDEA Test RESTful Web Service, Postman)
 
 **На следующем занятии используется JavaScript/jQuery. Если у вас там пробелы, <a href="https://github.com/JavaOPs/topjava#html-javascript-css">пройдите его основы</a>**
 
