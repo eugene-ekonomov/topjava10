@@ -291,3 +291,4 @@ _ru.javawebinar.topjava.model.User_ - имя региона, которое ис
 - 5: Если создаете List с одним значением или Map с одним ключом-значением, пользуйтесь `Collections.singleton..`
 - 6: В MealController общую часть `@RequestMapping(value = "/meals")` лучше вынести на уровень класса
 - 7: Не забывайте при реализации `JdbcUserRepositoryImpl` про `Map.computeIfAbsent` и `EnumSet`
+- 8: Проверьте `@Transactional(readOnly = true)` сверху `Jdbc..RepositoryImpl`
