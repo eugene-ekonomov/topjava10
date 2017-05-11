@@ -12,7 +12,8 @@
 
    
 #### Apply 02-HW6-meals.patch
-> Сделал обработку `getAll()/ meals` в `RootController`. В дальнейшем он будет обслуживать запросы JSP, а при переходе на AJAX `JspMealController` удалим.   
+При переходе на AJAX `JspMealController` удалим за ненадобностью, а `getAll()` по GET `/meals` останется в `RootController`.
+
 -  <a href="http://stackoverflow.com/questions/10327390/how-should-i-get-root-folder-path-in-jsp-page">Root path in JSP</a>
 
 #### Apply 03-HW6-fix-relative-url-utf8.patch
