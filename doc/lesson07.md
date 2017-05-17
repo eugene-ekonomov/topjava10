@@ -137,7 +137,7 @@ hamcrest-all используется в проверках `RootControllerTest`
   - 1.2 `ResourceControllerTest` для `style.css` (проверить status и ContentType)
 - 2: Реализовать `MealRestController` и протестировать его через `MealRestControllerTest`
   - 2.1 cледите чтобы url в тестах совпадал с параметрами в методе контроллера. Можно добавить логирование `<logger name="org.springframework.web" level="debug"/>` для проверки маршрутизации.
-  - 2.2 в параметрах `getBetween` принимать `LocalDateTime` (конвертировать через Spring, <a href="http://blog.codeleak.pl/2014/06/spring-4-datetimeformat-with-java-8.html">@DATETIMEFORMAT WITH JAVA 8 DATE-TIME API</a>), а передавать в тестах в формате `ISO_LOCAL_DATE_TIME` (например `'2011-12-03T10:15:30'`). Параметры трактовать подобно тому, как это делается в `AbstractMealController.getBetween` (раздельная фильтрация по дате и по времени).
+  - 2.2 в параметрах `getBetween` принимать `LocalDateTime` (конвертировать через Spring, <a href="http://blog.codeleak.pl/2014/06/spring-4-datetimeformat-with-java-8.html">@DATETIMEFORMAT WITH JAVA 8 DATE-TIME API</a>), а передавать в тестах в формате `ISO_LOCAL_DATE_TIME` (например `'2011-12-03T10:15:30'`). Параметры трактовать для нашего демо: раздельная фильтрация по дате и по времени.
  
 #### Optional
 - 3: Добавить еще один `MealRestController.getBetween` с раздельной фильтрацией по времени/дате, работающий при `null` значениях (см. демо и `JspMealController.getBetween`). Заменить `@DateTimeFormat` на свои LocalDate/LocalTime конверторы или форматтеры.
