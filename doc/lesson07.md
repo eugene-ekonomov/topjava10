@@ -93,7 +93,7 @@ GROUP BY u.id
 (для Windows можно использовать Git Bash)
   - <a href="https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop">Postman</a>
   - <a href="https://www.jetbrains.com/help/idea/rest-client-tool-window.html">IDEA: Tools->Test RESTful Web Service</a>
-
+  - [Insomnia REST client](https://insomnia.rest/)
 >  - Импортировать проект в SoapUi из config\Topjava-soapui-project.xml
 >  - Response смотреть в формате JSON.
    
