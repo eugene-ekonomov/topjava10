@@ -137,9 +137,9 @@ hamcrest-all используется в проверках `RootControllerTest`
 - 2: Реализовать `MealRestController` и протестировать его через `MealRestControllerTest`
   - 2.1 cледите чтобы url в тестах совпадал с параметрами в методе контроллера. Можно добавить логирование `<logger name="org.springframework.web" level="debug"/>` для проверки маршрутизации.
   - 2.2 в параметрах `getBetween` принимать `LocalDateTime` (конвертировать через Spring, <a href="http://blog.codeleak.pl/2014/06/spring-4-datetimeformat-with-java-8.html">@DATETIMEFORMAT WITH JAVA 8 DATE-TIME API</a>), а передавать в тестах в формате `ISO_LOCAL_DATE_TIME` (например `'2011-12-03T10:15:30'`).
-
+ 
 #### Optional
-- 3: Заменить `@DateTimeFormat` на свой LocalDateTime конвертор или форматтер.
+- 3: Сделать `MealRestController.getBetween` с раздельной фильтрацией по времени/дате, работающий при `null` значениях (см. демо и `JspMealController.getBetween`). Заменить `@DateTimeFormat` на свой LocalDateTime конвертор или форматтер.
   -  <a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/html/mvc.html#mvc-config-conversion">Кастомный Spring конвертор</a>
   -  <a href="http://stackoverflow.com/questions/13048368/difference-between-spring-mvc-formatters-and-converters">Difference between Spring MVC formatters and converters</a>
   -  Опционально: <a href="http://sambitjavatips.blogspot.ru/2014/10/spring-custom-formatter-annotation-for.html">Spring custom formatter annotation</a>
@@ -157,4 +157,3 @@ hamcrest-all используется в проверках `RootControllerTest`
 - 6: При проблемах с собственным форматтером убедитесь, что в конфигурации `<mvc:annotation-driven...` не дублируется
 - 7: **Проверьте выполение ВСЕХ тестов через maven**. В случае проблем проверьте, что не портите константу из `MealTestData`
 - 8: `@Autowired` в тестах нужно делать в том месте, где класс будет использоваться. Общий принцип: не размазывать код по классам, объявление переменных держать как можно ближе к ее использованию, группировать (не смешивать) код с разной функциональностью.
-- 9: Проверьте, можно ли в `MealRestController` делать раздельную фильтрацию по времени/дате (см. демо и `JspMealController.getBetween`) и работает ли она при `null` значениях.
