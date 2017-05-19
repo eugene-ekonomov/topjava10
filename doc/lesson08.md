@@ -74,7 +74,7 @@
 >  - <a href="http://stackoverflow.com/questions/25207147/datatable-vs-datatable-why-is-there-a-difference-and-how-do-i-make-them-w">dataTable() vs. DataTable()</a>
 
 #### Apply 7-ajax-datatables.patch
-
+> **!! Внимание: фикс удаления и добавления юзеров в патче 10_fix.patch**
 
 -  <a href="https://ru.wikipedia.org/wiki/AJAX">AJAX</a>.
 -  <a href="http://ruseller.com/jquery.php?id=124">Событие  $(document).ready</a>.
@@ -113,6 +113,12 @@
 аналогична
 
 `curl -v --user user@yandex.ru:password http://localhost:8080/topjava/rest/profile/meals`
+
+### ![error](https://cloud.githubusercontent.com/assets/13649199/13672935/ef09ec1e-e6e7-11e5-9f79-d1641c05cbe6.png) Фикс:
+#### Apply 10_fix.patch
+- Подключил скрипты в `users.jsp` (ошибка в патче `7-ajax-datatables.patch`)
+- Удалил сомнительный метод `MealRestController.getBetween` и сделал `@GetMapping("\filter")`
+- Удалил `contentType` в `MealRestControllerTest` где он не требуется
 
 ## ![question](https://cloud.githubusercontent.com/assets/13649199/13672858/9cd58692-e6e7-11e5-905d-c295d2a456f1.png) Ваши вопросы
 > Что делает код?
