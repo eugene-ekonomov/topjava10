@@ -115,7 +115,7 @@
 `curl -v --user user@yandex.ru:password http://localhost:8080/topjava/rest/profile/meals`
 
 ### ![error](https://cloud.githubusercontent.com/assets/13649199/13672935/ef09ec1e-e6e7-11e5-9f79-d1641c05cbe6.png) Фикс:
-#### Apply 10_fix.patch
+#### Apply (https://drive.google.com/file/d/0B9Ye2auQ_NsFN25aa0tJTkFvV1U)[10_fix.patch]
 - Подключил скрипты в `users.jsp` (ошибка в патче `7-ajax-datatables.patch`)
 - Удалил сомнительный метод `MealRestController.getBetween` и сделал `@GetMapping("\filter")`
 - Удалил `contentType` в `MealRestControllerTest` где он не требуется
