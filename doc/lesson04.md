@@ -35,6 +35,7 @@
 ## Занятие 4:
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 2. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFU005ZzBNZmZnTVU">Методы улучшения качества кода</a>
 **Внимание!! В IDEA 2017.1.1 любой QAPlugin у меня крэшится**  
+Используйте [FindBugs-IDEA](http://andrepdo.github.io/findbugs-idea)
 
 Сделайте интеграцию своего репозитория и подключите сверху своего <a href="https://github.com/JavaWebinar/topjava10/blob/master/README.md">README.md</a> (<a href="https://raw.githubusercontent.com/JavaWebinar/topjava10/master/README.md">Raw</a>) интергацию с
   - <a href="https://www.codacy.com">Codacy Check code</a>
