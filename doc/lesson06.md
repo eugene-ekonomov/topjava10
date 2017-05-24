@@ -173,7 +173,7 @@ C `@BatchSize(size = 200)` делается запрос на юзеров (1) �
 > - Выбор языка зависит от языка операционной системы и хедера `Accept-Language`. Добавил в `spring-mvc.xml` `messageSource` параметр [`fallbackToSystemLocale`](http://stackoverflow.com/questions/4281504/spring-local-sensitive-data).
 Он управляет выбором, куда переключаться при выборе en и отсутствии `app_en.properties`: локаль операционной системы или `app.properties` (`fallbackToSystemLocale=false`). Переключение локалей будем реализовывать в конце проекта.  
 
-### Для тестирования локали [можно поменять `Accept-Language`](https://stackoverflow.com/questions/7769061/how-to-add-custom-accept-languages-to-chrome-for-pseudolocalization-testing). Для хрома в chrome://settings/languages перетащить нужную локаль наверх.
+#### Для тестирования локали [можно поменять `Accept-Language`](https://stackoverflow.com/questions/7769061/how-to-add-custom-accept-languages-to-chrome-for-pseudolocalization-testing). Для хрома в chrome://settings/languages перетащить нужную локаль наверх.
 
 -  <a href="http://learningviacode.blogspot.ru/2012/07/reloadable-messagesources.html">Reloadable MessageSources</a>
 -  <a href="http://nginx.com/resources/admin-guide/serving-static-content/">nginx: Serving Static Content</a>
