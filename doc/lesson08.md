@@ -63,6 +63,9 @@
 
 ##  ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 5. <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFcGs4b1IyWWF2S2c">AJAX. Datatables. jQuery (обновлено в конце)</a>
  JSP полезны, если надо с сервера отдать статический html с серверной логикой (условия, циклы), сформированный на основе модели. Для динамической отрисовки таблицы мы будем использовать REST и JSON на 9м уроке (работа с datatables через Ajax).
+
+[Внешние скрипты, порядок исполнения](https://learn.javascript.ru/external-script)
+
 > - Сделал загрузку скриптов асинхронной (и все общие скрипты в `headTag.jsp`). Для асинхронной загрузки <a href="http://stackoverflow.com/a/41947330/548473">вынес скрипт</a> из `users.jsp` в `userDatatables.js`.
 >   - <a href="http://stackoverflow.com/questions/436411/where-should-i-put-script-tags-in-html-markup/24070373#24070373">JavaScript loading modern approach</a>
 > - Поправил стили `jquery.dataTables` на `dataTables.bootstrap` и добавил `dataTables.bootstrap..js`
