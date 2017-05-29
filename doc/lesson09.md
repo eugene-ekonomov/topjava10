@@ -70,7 +70,10 @@
 
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 6.  <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFcW1qeTVFdS1BdHM">Перевод DataTables на Ajax</a>
 #### Apply 7-datatable-via-ajax.patch
--  [DataTables Options](https://datatables.net/manual)
+> Напомню, что мы перешли на [параметры Datatables в формате 1.10](https://datatables.net/upgrade/1.10-convert)
+
+-  [DataTables Ajax](https://datatables.net/manual/ajax)
+
 
 #### Apply 8-js-i18n.patch
 > - Добавил [простую интернационализацию в JavaScript](https://stackoverflow.com/questions/6218970/resolving-springmessages-in-javascript-for-i18n-internationalization). 
