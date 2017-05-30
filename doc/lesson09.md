@@ -163,7 +163,7 @@
 - 3: Починить meals тесты, добавить тест на неавторизованный доступ
 
 #### Optional
-- 4: Подключить datetime-picker
+- 4: Подключить datetime-picker к фильтрам и модальному окну добавления/редактирования еды
   - 4.1 <a href="http://xdsoft.net/jqplugins/datetimepicker/">DateTimePicker jQuery plugin</a>
   - 4.2 Еще есть <a href="https://eonasdan.github.io/bootstrap-datetimepicker/">Bootstrap 3 Datepicker</a>
   
