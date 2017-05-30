@@ -74,6 +74,10 @@
 
 -  [DataTables Ajax](https://datatables.net/manual/ajax)
 
+#### ![question](https://cloud.githubusercontent.com/assets/13649199/13672858/9cd58692-e6e7-11e5-905d-c295d2a456f1.png) Вопрос:
+Что за дополнительный параметр (который каждый раз инкрементируется) появляется при запросе datatables данных по ajax (например `http://localhost:8080/topjava/ajax/admin/users/?_=1496156621129`) ?
+
+> Это защита `datatables` от кэширования запроса браузером (например в IE).
 
 #### Apply 8-js-i18n.patch
 > - Добавил [простую интернационализацию в JavaScript](https://stackoverflow.com/questions/6218970/resolving-springmessages-in-javascript-for-i18n-internationalization). 
