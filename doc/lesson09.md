@@ -58,6 +58,11 @@
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 4.  <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFd2ZvcS1pSjdMQlU">Реализация update</a>
 #### Apply 5_update.patch
 
+#### ![question](https://cloud.githubusercontent.com/assets/13649199/13672858/9cd58692-e6e7-11e5-905d-c295d2a456f1.png) Вопрос:
+> Можно ли было удаление делать без перезагрузки таблицы (удалением строки) и для редактирования брать данные со страницы, а не с сервера?
+
+В многопользовательском приложении принято при изменении данных подтягивать все изменения с базы, иначе может быть большая несогласованность базы и UI. В таблице еды наши пользователи видят только свои записи, но лучше для всех таблиц делать общий подход. Дополнительная нагрузка на базу тут совсем небольшая.
+
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 5.  <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFLXp5MTFDMEY5WFE">Spring Validation</a>
 #### Apply 6_validation.patch
 > - `responseJSON` не выводится в случае его отсутствия (например при попытке добавить пользователья с дублирующимся email)
@@ -75,9 +80,9 @@
 -  [DataTables Ajax](https://datatables.net/manual/ajax)
 
 #### ![question](https://cloud.githubusercontent.com/assets/13649199/13672858/9cd58692-e6e7-11e5-905d-c295d2a456f1.png) Вопрос:
-Что за дополнительный параметр (который каждый раз инкрементируется) появляется при запросе datatables данных по ajax (например `http://localhost:8080/topjava/ajax/admin/users/?_=1496156621129`) ?
+> Что за дополнительный параметр (который каждый раз инкрементируется) появляется при запросе datatables данных по ajax (например `http://localhost:8080/topjava/ajax/admin/users/?_=1496156621129`) ?
 
-> Это защита `datatables` от кэширования запроса браузером (например в IE).
+Это защита `datatables` от кэширования запроса браузером (например в IE).
 
 #### Apply 8-js-i18n.patch
 > - Добавил [простую интернационализацию в JavaScript](https://stackoverflow.com/questions/6218970/resolving-springmessages-in-javascript-for-i18n-internationalization). 
