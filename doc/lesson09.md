@@ -10,7 +10,7 @@
 > - Добавил в `curl.md` авторизацию
 > - Мелкие правки кода
 > - Сделал обновление локализации каждые 6 сек. (удобно исправлять ошибки)
-> - Сделал [правку на кэширование ajax запросов в IE](https://stackoverflow.com/a/4303862/548473)
+> - Сделал [защиту от кэширование ajax запросов в IE](https://stackoverflow.com/a/4303862/548473)
 > - Убрал неиспользуемые параметры из `failNoty()`
 > - [Tomcat 8.5.x перестал отдавать в заголовке `statusText`](http://tomcat.apache.org/tomcat-8.5-doc/changelog.html). Отображаем просто `status`.
 >    - RFC 7230 states that clients should ignore reason phrases in HTTP/1.1 response messages.
