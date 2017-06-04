@@ -56,6 +56,12 @@ Datatables перевели на ajax (`"ajax": {"url": ajaxUrl, ..`), те пр
 -  <a href="http://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#declaring-the-taglib">Spring Security Taglib.</a>
 -  <a href="http://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#jc-method">Method Security</a> и <a href="http://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/#method-security-expressions">Method Security Expressions</a>.
 
+#### ![question](https://cloud.githubusercontent.com/assets/13649199/13672858/9cd58692-e6e7-11e5-905d-c295d2a456f1.png) Вопрос:
+> У нас в `sprng-mvc` подключается `spring-app`, в который подключается `spring-security`. Т.о. `spring-mvc`  в себе содержит код `spring-app` и `spring-security`. Почему тогда аннотация `<security:global-method-security...` из `spring-security` не видна для контроллера из `spring-mvc`?
+
+1. Подключаем один контекст внутрь другого: это про import а не про наследование (тоже самое что скопипастить сюда xml из подключаемого import файла). Наследование это когда поиск бина, если он не найден, происходит в родителе.
+2. При создании контекста аннотация `<security:global-method-security...` говорит про то, что все бины текущего контекста, у которых есть аннотации авторизации (`@PreAuthorize/ @Secured/ ..`) будут проксироваться с проверкой авторизации. Контексты родителей и детей создаются сами по себе и аннотации проксирования у них собственные.
+
 ### ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 4.  <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFc1JMTE4xVG0zN0U">Interceptors. Редактирование профиля. JSP tag files.</a>
 #### Apply 07_interceptor.patch
 -  <a href="http://www.mkyong.com/spring-mvc/spring-mvc-handler-interceptors-example/">Spring interceptors</a>.
