@@ -179,3 +179,4 @@ Datatables перевели на ajax (`"ajax": {"url": ajaxUrl, ..`), те пр
 - 3: Можно не создавать собственные эксепшены, а в `ExceptionInfoHandler` ловить стандартные 
 - 4: в `MethodArgumentNotValidException` также есть `e.getBindingResult()`, его можно обрабатывать по аналогии с `BindException`
 - 5: Не дублируйте код переключения локали на странице логина и в приложении
+- 6: При проблемах с вализацией `Meals` в `MealRestController`, посмотрите на валидацию в `MealAjaxController.updateOrCreate`
