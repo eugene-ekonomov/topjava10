@@ -156,7 +156,7 @@ Datatables перевели на ajax (`"ajax": {"url": ajaxUrl, ..`), те пр
 - 1: Сделать валидацию в AdminAjaxController/MealAjaxController через `ExceptionInfoHandler`. Вернуть клиенту `ErrorInfo` и статус `HttpStatus.UNPROCESSABLE_ENTITY` (тип методов контроллеров вернуть обратно на `void`).
 - 2: Сделать валидацию принимаемых json объектов в REST контроллерах через `ExceptionInfoHandler`. Добавить в Rest контроллеры тест для невалидных данных.
   - <a href="https://dzone.com/articles/spring-31-valid-requestbody">@Valid @RequestBody + Error handling</a>
-- 3: Сделать обработку ошибки при дублирования email ("User with this email already exist") для: 
+- 3: Сделать обработку ошибки при дублирования email ("User with this email already exists") для: 
   - 3.1 регистрации / редактирования профиля пользователя
     - <a href="http://www.mkyong.com/spring-mvc/spring-mvc-form-handling-example/">Spring MVC form handling example</a>
   - 3.2 добавления / редактирования пользователя в таблице
