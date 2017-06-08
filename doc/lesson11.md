@@ -35,7 +35,7 @@
 
 #### Apply 11_04_HW10_duplicate_datetime.patch
 
-> - Изменил реализацию обработку дублирования `user.email` и сделал обработку дублирования `meal.dateTime` через [Controller Based Exception Handling](https://spring.io/blog/2013/11/01/exception-handling-in-spring-mvc#controller-based-exception-handling)
+> - Реализаовал обработку дублирования `user.email` и `meal.dateTime` через [Controller Based Exception Handling](https://spring.io/blog/2013/11/01/exception-handling-in-spring-mvc#controller-based-exception-handling)
 > - Сделал утильный класс `MessageUtil` для работы с i18n.
 > - Добавил тесты на дублирование. Отключил транзакционность в тестах на дублирование через `@Transactional(propagation = Propagation.NEVER)` (решение от Виталия). Второй вариант: удалить общий `@Transactional` и ставить ее только над тестами с модификацией. 
 >   - [Cannot test expected exception when using @Transactional with @Commit](http://stackoverflow.com/questions/37406714)
@@ -56,7 +56,7 @@
 #### Apply 11_06_i18n.patch
  - <a href="http://stackoverflow.com/questions/29929022/change-datatable-search-label/38133762#38133762">Добавил локализацию Search в datatable</a>
  - Вынес общие части опций таблиц в `datatablesUtil.js` используя <a href="https://api.jquery.com/jquery.extend/#jQuery-extend-deep-target-object1-objectN">jQuery.extend()</a>
- - Сделал локализацию ошибок:
+ - Сделал локализацию ошибок валидации:
    - Все коды для локализации конкретной ошибки валидации можно посмотреть в дебаге: `FieldError.getCodes()`
    - Коды для ее аргументов: `FieldError.getArguments()`. Тк аргумент складывается из имени класса и поля, переименовал в i18n `users/meals` на `user/meal`.
 
