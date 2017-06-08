@@ -3,7 +3,7 @@
 ### Обновил <a href="http://topjava.herokuapp.com/">Демо</a> приложение нашей версией
 
 ### <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFSzlObk8tbHdtcXc">Материалы занятия</a>
-#### Некоторые темы урока совсем новые, поэтому видео есть не везде, я по возможности постораюсь выложить недостающие. Все материалы проекта (в том числе и обновления) останутся вам доступны в Google Drive.
+#### Некоторые темы урока совсем новые, поэтому видео есть не везде. Я по возможности постараюсь выложить недостающие побыстрее. Все материалы проекта (в том числе и будущие обновления) останутся вам доступны в Google Drive.
 
 ### ![error](https://cloud.githubusercontent.com/assets/13649199/13672935/ef09ec1e-e6e7-11e5-9f79-d1641c05cbe6.png) Правка и рефакторинг
 
@@ -61,7 +61,7 @@
    - Коды для ее аргументов: `FieldError.getArguments()`. Тк аргумент складывается из имени класса и поля, переименовал в i18n `users/meals` на `user/meal`.
 
 ### Защита от XSS (Cross Site Scripting)
-**Попробуйте до и после патча ввести в любое текстовое поле редактирования `<script>alert('XSS')</script>` и сохранить.**
+> **Попробуйте до и после патча ввести в любое текстовое поле редактирования `<script>alert('XSS')</script>` и сохранить.**
 #### Apply 11_07_XSS.patch
 - <a href="https://forum.antichat.ru/threads/20140/">XSS для новичков</a>
 - <a href="https://habrahabr.ru/post/66057/">XSS глазами злоумышленника</a>
@@ -69,7 +69,7 @@
 
 ### Обработка ошибок 404 (NotFound)
 #### Apply 11_08_404.patch
-[Teat 404 NotFound with MVC Spring Security](https://stackoverflow.com/questions/18322279/spring-mvc-spring-security-and-error-handling)
+- [Teat 404 NotFound with MVC Spring Security](https://stackoverflow.com/questions/18322279/spring-mvc-spring-security-and-error-handling)
 
 ### Доступ к AuthorizedUser
 #### Apply 11_09_auth_user.patch
