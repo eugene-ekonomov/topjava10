@@ -178,3 +178,12 @@ Datasources advanced
 
 ## Пожалуйста <a href="http://goo.gl/forms/PtFcPqEV5n">ответь на 4-6 вопросов по проекту</a>, это важно!
 ### На следующей неделе сделаю подробную рассылку про [проект Masterjava](http://javaops.ru/reg/masterjava), систему бонусов и планируемые расширения Topjava. 
+
+## ![error](https://cloud.githubusercontent.com/assets/13649199/13672935/ef09ec1e-e6e7-11e5-9f79-d1641c05cbe6.png) Замечания по резюме:
+- варианты размещения: google doc + linkedin + hh + ... 
+- хорошо, если будет в html формате (нарпимер в https://pages.github.com/). [Например так](https://gkislin.github.io/), [на github](https://github.com/gkislin/gkislin.github.io/blob/master/index.html)
+-  возраст и день рождения можно не писать
+-  все упоминания Junior убрать
+-  линки делай кликабельными (если формат поддерживает)
+-  если нет опыта в IT, обязательно вставьте [Topjava](https://github.com/JavaOPs/topjava/blob/master/cv.md#Позиционирование-проекта-topjava). Все не-IT можно кратко.
+- всю выгодную для себя информацию (и важную для HR) распологайте вверху. Название секций в резюме и их порядок относительно стандартный и важный
