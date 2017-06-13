@@ -90,6 +90,8 @@
 > - [Поменял настройки `dataSource` для профиля `heroku`](http://stackoverflow.com/questions/10684244/dbcp-validationquery-for-different-databases). 
 При опускании/поднятии приложения в heroku.com портятся коннекты в пуле и необходимо их валидировать. 
 
+**Приложение деплоится в ROOT: [http://localhost:8080](http://localhost:8080)**
+
 - <a href="http://habrahabr.ru/post/265591/">Деплой Java Spring приложения в PaaS-платформу Heroku</a>
 ```
 Config Vars
